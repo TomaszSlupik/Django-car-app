@@ -1,0 +1,43 @@
+
+    body {
+    background-image: url('https://www.imaginery.pl/wp-content/uploads/2019/02/zabezpieczenie-surowego-drewna-750x356.jpg');
+    background-size:100%;
+    width: 100%;
+    }
+
+
+
+table {
+    border-spacing: 0;
+}
+
+table,
+td,
+th {
+    border: 2px solid black !important;
+}
+
+td,
+th {
+    padding: 5px 20px;
+}
+
+li {
+    color: white;
+}
+
+.text {
+    font-size:80px;
+    margin-left: 12cm;
+}
+
+.bmw {
+    margin: 0.5cm;
+}
+
+.tabela {
+	margin-left: 0.7cm;
+	margin-right: 0.7cm;
+	}
+
+

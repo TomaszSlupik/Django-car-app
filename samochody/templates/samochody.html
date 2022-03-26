@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/869c3b6d1a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'moj.css' %}">
+</head>
+<body>
+
+<button><b><a href="http://127.0.0.1:8000/mercedes/" target="_blank">MERCEDES</a></b>
+    </button>
+<span></span>
+<button>
+<b><a href="http://127.0.0.1:8000/BMW/" target="_blank">BMW</a></b>
+</button>
+
+{% for nazwa in samochody %}
+
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card border-dark mb-3" >
+      <div class="card-body">
+        <h5 class="card-title"><b><p style="padding-left: 3cm"> {{ nazwa.marka }}</b></p></h5>
+        <p class="card-text"><div class="skype">
+          <img src="/media/{{nazwa.zdjecie}}" class="nazwa.zdjecie" width="200" height="240" align="left"><p style="text-align: justify" >{{ nazwa.opis }} </p><br>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="col-sm-4"><br><br><br><br><br>
+    <div class="card border-dark mb-3">
+      <div class="card-body">
+
+        <h5 class="card-title"><b>Salon <i class="fa-solid fa-screwdriver-wrench"></b></i></h5>
+        <p class="card-text"><img src="/media/{{nazwa.salon}}" class="nazwa.zdjecie" width="200" height="120" align="left"></p>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+   {{ nazwa.rozmiar }}
+
+    {% endfor %}
+</div>
+</body>
+</html>
